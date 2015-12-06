@@ -187,7 +187,7 @@ Extensions typically involve:
 
 Using an interface like:
 
-````
+````js
 var ext = require('ext');
 ext.name; // unique string name for debugging
 telehash.add(ext); // just does telehash.extensions[ext.name] = ext;
@@ -215,7 +215,7 @@ All transports are implemented as an extension that exposes the functionality of
 
 Using an interface like:
 
-````
+````js
 var tpx = require('telehash-x');
 // mesh.receive = function(packet,pipe){ };
 tpx.mesh(mesh,function(err, tp){
